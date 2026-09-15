@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和の心 茶道・華道教室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 min-h-screen flex flex-col">
+
+    <header class="bg-white fixed top-0 left-0 w-full shadow-md z-50 p-2"> 
+        <div class="flex flex-col md:flex-row justify-between items-center px-4 py-2">
+            
+            <div class="flex items-center gap-3">
+                <img src="/my-profile/img/kadou1.jpg" alt="ロゴ" class="w-12 h-12 rounded-full object-cover">
+                <h1 class="text-lg md:text-3xl font-bold">和の心 茶道・華道教室</h1>
+            </div>
+
+            <button id="menu-btn"class="md:hidden text-3xl text-green-900">☰</button>
+
+            <nav id="menu" class="hidden md:flex gap-5 text-lg">
+                <a href="#ホーム" class="text-green-900 hover:text-gray-700 transition-all duration-300">ホーム</a>
+                <a href="#教室紹介" class="text-green-900 hover:text-gray-700 transition-all duration-300">教室紹介</a>
+                <a href="#コース案内" class="text-green-900 hover:text-gray-700 transition-all duration-300">コース案内</a>
+                <a href="#お知らせ" class="text-green-900 hover:text-gray-700 transition-all duration-300">お知らせ</a>
+                <a href="#お問い合わせ" class="text-green-900 hover:text-gray-700 transition-all duration-300">お問い合わせ</a>
+            </nav>
+
+        </div>
+
+            <nav id="mobile-menu" class="hidden md:hidden flex-col text-center gap-3 pb-3">
+                <a href="#ホーム" class="block py-1 text-green-900">ホーム</a>
+                <a href="#教室紹介" class="block py-1 text-green-900">教室紹介</a>
+                <a href="#コース案内" class="block py-1 text-green-900">コース案内</a>
+                <a href="#お知らせ" class="block py-1 text-green-900">お知らせ</a>
+                <a href="#お問い合わせ" class="block py-1 text-green-900">お問い合わせ</a>
+            </nav>
+
+    </header>
+
+    <section id="ホーム" class="h-[60vh] md:h-screen mt-4">
+        <img src="/my-profile/img/ie1.jpg" alt="ホーム画像" class="absolute top-0 left-0 w-full h-[60vh] md:h-screen object-cover brightness-75">
+        <div class="absolute top-0 flex justify-center pt-20 ml-5 mr-5 my-36 tb-mini:ml-10 pc:ml-20 tb-mini:justify-start">
+            <h1 class="text-3xl md:text-7xl font-bold underline text-left text-white pt-20 pl-4 hover:scale-105 transition-all duration-300">日本の伝統文化を未来へ<br />～茶道・華道～</h1>
+        </div>
+    </section>
+
+    <section id="教室紹介" class="py-9 bg-white mx-4 md:mx-10 rounded-3xl scroll-mt-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-5">教室紹介</h1>
+            <p class="text-xl leading-8 text-gray-800">和の心 茶道・華道教室では、日本の伝統文化である茶道と華道を楽しく学ぶことができます。華道は池坊流を取り入れ、花の美しさや自然との調和を大切にしながら、生け花の基本から丁寧に指導します。茶道では、お茶の点て方だけでなく、礼儀作法やおもてなしの心も学ぶことができます。初心者の方から経験者の方まで、一人ひとりのペースに合わせて学べる教室です。</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 h-auto rounded mx-4 md:mx-32 mt-4"> 
+            <div class="bg-white shadow-lg rounded hover:scale-105 transition-all duration-300">
+                <div class="flex flex-col items-center">
+                    <img src="/my-profile/img/kadou2.jpg" alt="華道の様子" class="rounded-t-xl object-cover h-48 w-full shadow-xl">
+                    <h2 class="text-center text-2xl">華道の様子</h2>
+                    <p class="px-4 pb-2">季節の花々を通して、自然の美しさや調和の心を学びます。初心者の方でも安心して取り組めるよう、池坊流の基本から丁寧に指導いたします。</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded hover:scale-105 transition-all duration-300">
+                <div class="flex flex-col items-center">
+                    <img src="/my-profile/img/ie1.jpg" alt="教室の様子" class="rounded-t-xl object-cover h-48 w-full shadow-xl">
+                    <h2 class="text-center text-2xl">教室の様子</h2>
+                    <p class="px-4 pb-2">落ち着いた雰囲気の中で、茶道と華道を楽しく学ぶことができます。初心者の方も安心して参加できる、温かい教室です。また、伝統文化に触れながら、礼儀作法や豊かな感性を育みます。</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded hover:scale-105 transition-all duration-300">
+                <div class="flex flex-col items-center">
+                    <img src="/my-profile/img/sadou1.jpg" alt="茶道の様子" class="rounded-t-xl object-cover h-48 w-full shadow-xl">
+                    <h2 class="text-center text-2xl">茶道の様子</h2>
+                    <p class="px-4 pb-2">茶道の大切な教えである「一期一会」の心を学びます。一つひとつの出会いを大切にしながら、お茶の点て方や礼儀作法、おもてなしの心を身につけることができます。</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="コース案内" class="py-9 bg-white mx-4 md:mx-10 rounded-3xl m-4 scroll-mt-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-5">コース案内</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 p-8 h-auto rounded mx-4 md:mx-32 mt-4">
+            <div class="bg-green-100 shadow-lg m-4 rounded hover:scale-105 transition-all duration-300">
+                <h2 class="text-2xl font-bold px-4 pt-4">茶花教室</h2>
+                <p class="text-lg px-4 p-4">茶花教室では、茶道で使われる花の生け方を学びます。季節の草花を大切にしながら、自然の美しさを表現する心を育てます。初心者の方でも基本から丁寧に学ぶことができます。また、茶道だけや華道だけでも受けることができます。</p>
+            </div>
+            <div class="bg-green-100 shadow-lg m-4 rounded hover:scale-105 transition-all duration-300">
+                <h2 class="text-2xl font-bold px-4 pt-4">青少年親子マナー教室</h2>
+                <p class="text-lg px-4 p-4">青少年親子マナー教室では、親子で一緒に礼儀作法やおもてなしの心を学びます。日常生活や学校生活で役立つマナーを身につけながら、相手を思いやる心を育て、日本の伝統文化にも触れながら、親子の絆を深めることができる教室です。</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="お知らせ" class="py-9 bg-green-900 mx-4 md:mx-10 rounded-3xl m-4 scroll-mt-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl text-white font-bold underline text-center mb-5 hover:scale-105 transition-all duration-300">お知らせ・行事</h1>
+        </div>
+        <div class="text-center text-white">
+            <ul class="text-2xl">
+                <li>1月：初釜（お茶会）</li>
+                <li>4月：春の生け花体験会</li>
+                <li>7月：親子茶道教室</li>
+                <li>11月：文化祭作品展示</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="お問い合わせ" class="py-9 bg-green-900 mx-4 md:mx-10 rounded-3xl m-4 scroll-mt-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl text-white font-bold text-center mb-5">お問い合わせ</h1>
+            <p class="text-white text-2xl text-center">〒〇△▢ー◇◇▽△</p>
+            <p class="text-white text-2xl text-center">〇◎都 △▢区 ◇町 ◎ー◇▢ー△</p>
+            <p class="text-white text-2xl text-center">☎ ◇◎ー◎◇〇▢ー△▢◇◎</p>
+        </div>
+    </section>
+
+    <footer class="bg-white text-gray-900 w-full p-4 items-center text-center">
+        <p>&copy;2026 和の心 茶道・華道教室</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");});
+    </script>
+
+</body>
+</html>
