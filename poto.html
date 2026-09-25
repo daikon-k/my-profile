@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-600">
+    
+    <!--ヘッダー-->
+    <header class="bg-white py-6 flex justify-between fixed top-0 left-0 w-full z-50">
+        <h1 class="text-gray-950 text-4xl p-2 font-bold">きこまる</h1>
+        <p class="mt-2 text-indigo-500 text-xl p-2">POSSEでプログラミングを学んでいます。</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 pt-32 space-y-16">
+
+        <!--自己紹介-->
+        <section>
+
+            <h2 class="text-5xl text-white text-center font-bold mb-4">自己紹介</h2>
+
+            <div class="bg-white rounded-lg py-2 p-4 text-xl w-auto">
+                <p>こんにちは！ <br>プログラミングについて、学びを深めて、理解できるような人間になるために、日々勉強しています。<br>また、AIをうまく利用するために、日々AIの良い利用の仕方も学んでいます。</p>
+            </div>
+
+        </section>
+
+        <!--スキルリスト-->
+        <section>
+
+            <h2 class="text-5xl text-white text-center font-bold mb-4">スキル</h2>
+
+            <div class="flex justify-center">
+
+                <ul class="flex flex-wrap gap-2 justify-center">
+                    <li class="transition-all duration-200 hover:scale-105 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xl">HTML</li>
+                    <li class="transition-all duration-200 hover:scale-105 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xl">JavaScript</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!--作品スライダー-->
+        <section>
+
+            <h2 class="text-5xl text-white text-center font-bold mb-4">作品</h2>
+
+            <section  class="splide" aria-label="作品スライダー">
+
+                <div class="splide__track">
+
+                    <ul class="splide__list">
+
+                        <li class="splide__slide relative">
+                            <img src="./img/55835_0.jpg" alt="作品１" class="transition-all duration-200 w-full rounded-lg object-cover hover:scale-105">
+                            <p class="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded">仮の画像</p>
+                        </li>
+
+                        <li class="splide__slide relative">
+                            <img src="./img/kari.jpg" alt="作品２" class="transition-all duration-200 w-full rounded-lg object-cover hover:scale-105">
+                            <p class="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded">仮の画像</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!--フッター-->
+    <footer class="bg-white text-gray-400 text-center py-6 mt-16">
+        <p>2026 きこまる</p>
+    </footer>
+
+    <script>
+        const year = new Date().getFullYear();
+        document.querySelector('footer p').textContent = `© ${year} きこまる`;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>new Splide('.splide').mount();</script>
+
+</body>
+</html>
