@@ -1,0 +1,326 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  background-color: #fffdf8;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h2 {
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #b56b7a;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.main-visual {
+  position: relative;
+  margin-top: 80px;
+}
+
+.main-visual img {
+  width: 100%;
+  display: block;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+}
+
+.main-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.main-text p {
+  font-size: 20px;
+}
+
+.culture {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #fffdf8;
+}
+
+.culture h2 {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.culture-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.culture-card {
+  flex: 1;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+.culture-card:hover {
+  transform: translateY(-8px);
+}
+
+.culture-card h3 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.culture-card p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.culture-card a {
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  color: white;
+  background-color: #6b8068;
+  border-radius: 6px;
+}
+
+.culture-card a:hover {
+  opacity: 0.8;
+}
+
+.culture-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.seasons {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #f5f1e8;
+}
+
+.seasons h2 {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.season-cards {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.season-card {
+  flex: 1;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-8px);
+}
+
+.season-card h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.season-card p {
+  line-height: 1.7;
+}
+
+.today {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #fffdf8;
+}
+
+.today h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.today-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease;
+}
+
+.today-card:hover {
+  transform: translateY(-8px);
+}
+
+.today-card h3 {
+  font-size: 26px;
+}
+
+.today-card p {
+  line-height: 1.8;
+}
+
+.today-card button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6b8068;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.today-card button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  background-color: #8b6f47;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.today-card button:hover {
+  background-color: #6f5638;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background-color: #f5f1e8;
+  color: #4a4036;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+footer p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 12px;
+  }
+
+    .culture {
+    padding: 40px 20px;
+  }
+
+  .culture-cards {
+    flex-direction: column;
+  }
+
+  .season-cards {
+    flex-direction: column;
+  }
+
+  .season-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .today {
+    padding: 40px 20px;
+  }
+
+  .today-card {
+    padding: 30px 20px;
+  }
+
+  .main-text h1 {
+    font-size: 32px;
+  }
+
+  .main-text p {
+    font-size: 16px;
+  }
+
+}
+
+section {
+  scroll-margin-top: 100px;
+}
